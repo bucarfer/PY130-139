@@ -1,6 +1,4 @@
-def print_message( *, message, level="INFO",):
-    print(f"{level} {message}")
+l1 = [None, "APPLE", 2, [1, 2], None]
 
-print_message(message="estamos locos??")
-print_message(level="FYI", message="estamos locos??")
-print_message("***", message="estamos locos??") #TyperError, keyworkd only arguments
+list_no_none = list(filter(lambda item: item is not None, l1))
+print(list_no_none)
