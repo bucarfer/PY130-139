@@ -1,4 +1,6 @@
-l1 = [None, "APPLE", 2, [1, 2], None]
+nested_tuple = ((1, 2), (3, 4), (5, 6))
 
-list_no_none = list(filter(lambda item: item is not None, l1))
-print(list_no_none)
+(a, b), (c, d), (e, f) = nested_tuple
+
+print(a)
+print(f)
