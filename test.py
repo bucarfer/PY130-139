@@ -1,6 +1,12 @@
-nested_tuple = ((1, 2), (3, 4), (5, 6))
+import unittest
 
-(a, b), (c, d), (e, f) = nested_tuple
+class MyList:
+    def process(self):
+        return self
 
-print(a)
-print(f)
+class TestMyList(unittest.TestCase):
+    def test_process_returns_same_object(self):
+        lst = MyList()
+        self.assertIs(lst, lst.process())
+
+unittest.main()
